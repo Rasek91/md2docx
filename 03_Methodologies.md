@@ -25,8 +25,8 @@ The service enumeration portion of a penetration test focuses on gathering infor
 
 | Server IP Address | Ports Open |
 | ----------------: | ---------: |
-| 192.168.          | TCP:       |
-|^^                 | UDP:       |
+| 192.168.          | TCP\:      |
+|^^                 | UDP\:      |
 
 ##### Nmap Scan Results:
 
