@@ -1,0 +1,17 @@
+---
+
+#folder where the MD files are located
+Folder: test
+#filename of the result DOCX file
+Filename: test/test.docx
+#template where the file will be generate
+Template: test/OSCP-OS-XXXXX-Exam-Report_Template3.2.docx
+#style name what will be used for table
+Table Style: List Table 3 Accent 1
+#inline code font
+Inline Code Font: Courier New
+#inline code RGB color in hexadecimal
+Inline Code Color: BF1B17
+#style of the syntax highlighter: https://pygments.org/demo/
+Syntax Highlight Style: vim
+
