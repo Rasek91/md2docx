@@ -1,0 +1,6 @@
+python-docx>=0.8.10
+mistune>=0.8.4
+Pygments>=2.6.1
+PyYAML>=5.3.1
+requests>=2.24.0
+

@@ -12,6 +12,10 @@ Table Style: List Table 3 Accent 1
 Inline Code Font: Courier New
 #inline code RGB color in hexadecimal
 Inline Code Color: BF1B17
+#image size in a floating number
+Image Size: 16.0
+#unit of the image size it can be: cm or inches
+Unit of Image Size: cm
 #style of the syntax highlighter: https://pygments.org/demo/
 Syntax Highlight Style: vim
 

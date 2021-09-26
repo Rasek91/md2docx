@@ -4,7 +4,7 @@ from docx.enum.dml import MSO_THEME_COLOR_INDEX
 from docx.enum.style import WD_STYLE_TYPE
 from docx.oxml.shared import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Cm, RGBColor
+from docx.shared import Cm, Inches, RGBColor
 from glob import glob
 from html.parser import HTMLParser
 from io import BytesIO
@@ -184,7 +184,12 @@ class MDConverter(HTMLParser):
             response = get(image)
             image = BytesIO(response.content)
         
-        self.document.add_picture(image, width = Cm(8.0))
+        if self.config["Unit of Image Size"].lower() == 'cm':
+            self.document.add_picture(image, width = Cm(self.config["Image Size"]))
+        elif self.config["Unit of Image Size"].lower() == 'inches':
+            self.document.add_picture(image, width = Inches(self.config["Image Size"]))
+        else:
+            raise Exception("The unit of the image size should be cm or inches.")
     
     #function to handle start of an HTML tag
     def handle_starttag(self, tag, attrs):
